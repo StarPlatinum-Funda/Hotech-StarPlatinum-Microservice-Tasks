@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.List;
 
 public interface TaskRepository extends JpaRepository<Task, Long> {
+
     List<Task> findAllByEmployee(RoomIdentifier room);
 
     @Query("SELECT t FROM Task t WHERE t.room = :employee AND t.dueDate >= :start AND t.dueDate <= :end")

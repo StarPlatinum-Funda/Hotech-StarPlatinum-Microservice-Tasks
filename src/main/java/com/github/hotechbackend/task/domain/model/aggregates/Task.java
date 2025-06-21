@@ -71,4 +71,9 @@ public class Task extends AuditableAbstractAggregateRoot<Task> {
         Locale locale = Locale.ENGLISH;
         return dateFormatter.print(this.dueDate, locale);
     }
+
+    public TaskStatus getStatus() {
+        return status;
+    }
+
 }

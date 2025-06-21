@@ -1,4 +1,8 @@
 package com.github.hotechbackend.task.domain.model.queries;
 
-public record GetAllTaskForRoomQuery(String room) {
+import com.github.hotechbackend.task.domain.model.valueobjects.RoomIdentifier;
+
+public record GetAllTaskForRoomQuery(
+        RoomIdentifier roomIdentifier
+) {
 }

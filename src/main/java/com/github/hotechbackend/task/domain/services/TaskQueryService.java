@@ -14,7 +14,4 @@ public interface TaskQueryService {
 
     List<Task> handle(GetAllTaskForRoomQuery query);
 
-    List<Task> handle(GetAllTaskInWeekForRoomQuery query);
-
-    List<Task> handle(GetAllTaskFromDatesForRoomQuery query);
 }
